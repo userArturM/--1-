@@ -1,0 +1,25 @@
+﻿<meta charset='utf-8'>
+<script>
+	var correctAnswersCount = 0;
+
+	var answer = prompt('Отгадайте загадку: зимой и летом одним цветом?');
+	answer = answer.toLowerCase();
+	if (answer == 'елка' || answer == 'ель' || answer == 'ёлка' || answer == 'ёлочка') {
+		alert('Поздравляем вы угадали!');
+		correctAnswersCount++;
+	} else {
+		alert('К сожалению вы не угадали, это елка');
+	}
+
+	answer = prompt('Отгадайте загадку: сто одежек и все без застежек?');
+	answer = answer.toLowerCase();
+	if (answer == 'капуста') {
+		alert('Поздравляем вы угадали!');
+		correctAnswersCount++;
+	} else {
+		alert('К сожалению вы не угадали, это капуста');
+	}
+
+	alert('Вы угадали ' + correctAnswersCount + ' загадок');
+</script>
+
